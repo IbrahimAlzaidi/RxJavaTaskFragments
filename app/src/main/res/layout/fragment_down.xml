@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.OutputFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="18dp"
+        app:cardBackgroundColor="#20FF9E80"
+        style="@style/Widget.App.CardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="The Text Shown Here"
+            android:lines="5"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:fontFamily="@font/vollkornsemibolditalic"
+            android:textSize="28sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
